@@ -62,7 +62,8 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
-        body: new Container(
+        body: new SingleChildScrollView(
+          child:Container(
             padding: const EdgeInsets.only(left: 40, right: 40, top: 20),
             decoration: BoxDecoration(
                 // color: Colors.blueGrey,
@@ -126,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         new Row(
                           children: <Widget>[
                             new Container(
-                              width: 165.0,
+                              width: 155.0,
                               child: Text(
                                 "$status",
                                 style: TextStyle(
@@ -150,6 +151,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 )
               ],
-            )));
+            ))));
   }
 }
